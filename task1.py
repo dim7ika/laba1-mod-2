@@ -66,6 +66,7 @@ class House:
             raise ValueError("Количество комнат не может быть отрицательным числом.")
 
     def add_room(self, room_type: str) -> None:
+        self.num_rooms += 1
         """Добавляет комнату в дом."""
 
     def get_address(self) -> str:
